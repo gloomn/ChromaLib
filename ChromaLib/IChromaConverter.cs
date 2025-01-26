@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ChromaLib
 {
-    internal interface IChromaConverter
+    public interface IChromaConverter<TInput, TOutput>
     {
+        TOutput Convert(TInput input);
     }
 }
